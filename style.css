@@ -54,7 +54,6 @@ main{
 
 .nav-list-item{
 	display: block;
-	margin: 0 0 10px;
 	font-size: 18px;
 	-webkit-box-flex: 0;
 	-webkit-flex: none;
