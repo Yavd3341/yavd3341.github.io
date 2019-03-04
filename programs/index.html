@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		Хранилище - Разное
+		Хранилище - Программы
 	</title>
 	<link rel="stylesheet" type="text/css"  href="/style.css" />
 </head>
@@ -12,7 +12,7 @@
 		<div class="container">
 			<div class="title">
 				<h1>
-					<a href="/index.html">Хранилище</a> - Разное
+					<a href="/index.html">Хранилище</a> - Программы
 				</h1>
 			</div>
 		
@@ -22,7 +22,7 @@
 				<a class="nav-link" href="#strip-path-generator">
 					<div class="nav-list-item">
 						<div class="header">
-							Переводим модельки в Майн
+							(Изонитка) Генератор последовательностей
 						</div>
 					</div>
 				</a>
@@ -30,57 +30,11 @@
 			
 			<div class="block content" id="3d-to-schem">
 				<div class="header">
-					Переводим модельки в Майн
+					(Изонитка) Генератор последовательностей
 				</div>
 				<p>
-					Всем привет! Сегодня мы поговорим о переводи обычных 3D-моделей в "кубический" вариант. Для начала работы нам нужно две программы: <a href="http://www.patrickmin.com/binvox/download.php?id=2">binvox</a> и <a href="http://www.patrickmin.com/viewvox/download.php?id=2">viewvox</a>. Стоит заметить, что данные программы должны запускаться через консоль.
+					<i>Пока пусто...</i>
 				</p>
-				<p>
-					Итак, давайте начнём. Сначала нам нужна модель. Binvox поддерживает <b>только</b> следующие форматы моделей: Wavefront OBJ, VRML 2.0, UG, OFF, DXF, XGL, POV, BREP, PLY и JOT. Я взял модель руки.
-				</p>
-				<img src="img/binvox/img1.png" />
-				<p>
-					Теперь все файлы переносим в удобное для вас место. Я для этого создал папку Tutorial.
-				</p>
-				<img src="img/binvox/img2.png" />
-				<p>
-					После переноса всех файлов нужно открыть консоль. Если в Линуксах можно через ПКМ -> Open Terminal, то в Винде надо держа Shift нажать на ПКМ и только тогда у вас будет опция "Открыть окно PowerShell здесь" или "Открыть окно команд здесь". Жмём по нему и видим синие окно PS или чёрное окно CMD. 
-				</p>
-				<img src="img/binvox/img3.png" />
-				<p>
-					Всё. Приготовления закончены, можно приступать. Вводим команду <code>./binvox -d 64 -c hand.obj</code>, где 64 это размер сетки (мы к этому ещё вернёмся) и hand.obj это наша модель. После ввода жмём Enterи ждём завершения преобразования.
-				</p>
-				<img src="img/binvox/img4.png" />
-				<img src="img/binvox/img5.png" />
-				<p>
-					После преобразования вводим <code>./viewvox hand.binvox</code>. "hand.binvox" - это файл который мы только что создали. Перед нами появляеться окно с "кубической" моделью.
-				</p>
-				<img src="img/binvox/img6.png" />
-				<img src="img/binvox/img7.png" />
-				<p>
-					Если Вам всё нравиться, то можно теперь создать более привычный для Майна файл - Schematic. Вводим тоже самое, что и в начале, только  уже приписываем <code>-t schematic</code>. Должно выйти примерно так: <code>./binvox -d 64 -c hand.obj -t schematic</code>. После ввода и нажатия на Enter просто снова ждём.
-				</p>
-				<img src="img/binvox/img8.png" />
-				<img src="img/binvox/img9.png" />
-				<p>
-					На выходе в папке с Binvox получаем наш готовый файл Schematic!
-				</p>
-				<img src="img/binvox/img10.png" />
-				<p>
-					Теперь коротко о <code>-d 64</code>. <code>-d</code> задаёт размер решётки (стороны) в которую преобразуют нашу модель. В данном туториале я написал 64, значит что моя модель не будет превышать размеры куба 64x64x64.
-				</p>
-				
-				<div class="header">
-					Ссылки
-				</div>
-				<ul>
-					<li>
-						<a href="https://minecraft.gamepedia.com/Programs_and_editors/Binvox">Вики</a>
-					</li>
-					<li>
-						<a href="http://www.patrickmin.com/minecraft/">Официальный сайт проекта</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 	</main>
